@@ -1,0 +1,10 @@
+Ryan Painter rapaint@clemson.edu
+
+This program reads and displays image files. Read images can be color inverted, noisified, and saved.
+
+1) run the "make" command
+2) run "./imgview <file name>" (the file name parameter is optional)
+3) with the viewport selected press r to read an image, w to write an image, i to invert an images colors, n to noisify an image, and q or esc to quit the program. (when using read or write the terminal must be selected to type in the desired file name)
+
+If the program is not given a file name when run and instead a file is opened after the program has started, the window won't resize properly until the window is manually maximized and minimized.
+teapot.jpg spits unknown type messages into the terminal.

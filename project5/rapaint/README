@@ -1,0 +1,19 @@
+Ryan Painter rapaint@clemson.edu
+
+tonemap:
+	
+	This progam provides some basic ways to process and display HDR images
+	
+	1) run the "make" command
+	2) run "./tonemap <filename>"
+	3) use the following key functions to manipulate the image
+		b - Apply baseline tone mapping.
+		g - Apply gamme compression. This will ask if you would like to use a custom gamma value or if you would like to use the computers default gamma. Gamma values should be floats between 0 and 1
+		w - Write currently displayed image to a file. This will ask for a file name, please provide a valid file name WITHOUT AN EXTENSION.
+		r - Reset the image to its original state.
+		t - Toggle between displaying the edited image and the original.
+		q - Quit.
+		
+	Issues:
+		ocean.exr segfaults when the program tries to display it, i believe this is because the image is too large and my renderImage() function tries to create an array of 4.4B float values.
+		The user input gamma value does not have any validation, values beyond 0 to 1 and non-float values can be input.
